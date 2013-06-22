@@ -1,0 +1,14 @@
+{"ts":1371885621580,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1371885722722,"patch":[[{"diffs":[[1,"exports.index = function(req, res){\n};"]],"start1":0,"start2":0,"length1":0,"length2":38}]],"length":38,"saved":false}
+{"ts":1371885797412,"patch":[[{"diffs":[[0,"res){\n};"],[1,"\n\nexports.getIndex = function(req, res){\n    \n};"]],"start1":30,"start2":30,"length1":8,"length2":56}]],"length":86,"saved":false}
+{"ts":1371885862171,"patch":[[{"diffs":[[0,", res){\n"],[1,"    if(req.params.method === 'getIndex'){\n        this.getIndex;\n    }\n"],[0,"};\n\nexpo"]],"start1":28,"start2":28,"length1":16,"length2":87}]],"length":157,"saved":false}
+{"ts":1371885880978,"patch":[[{"diffs":[[0,"s){\n    "],[1,"res.send('getIndex');"],[0,"\n};"]],"start1":146,"start2":146,"length1":11,"length2":32}]],"length":178,"saved":false}
+{"ts":1371885940797,"patch":[[{"diffs":[[0,"(req, res){\n"],[1,"    \n    console.log('api.index');\n    \n"],[0,"    if(req.p"]],"start1":24,"start2":24,"length1":24,"length2":64}]],"length":218,"saved":false}
+{"ts":1371885978831,"patch":[[{"diffs":[[0,", res){\n"],[-1,"    \n"],[0,"    cons"]],"start1":28,"start2":28,"length1":21,"length2":16},{"diffs":[[0,"log("],[-1,"'api.index');\n    "],[1,"req.params.method);"],[0,"\n   "]],"start1":48,"start2":48,"length1":26,"length2":27}]],"length":214,"saved":false}
+{"ts":1371885997125,"patch":[[{"diffs":[[0,"getIndex"],[1,"()"],[0,";\n    }\n"]],"start1":127,"start2":127,"length1":16,"length2":18}]],"length":216,"saved":false}
+{"ts":1371886010554,"patch":[[{"diffs":[[0,"etIndex("],[1,"req, res"],[0,");\n    }"]],"start1":128,"start2":128,"length1":16,"length2":24}]],"length":224,"saved":false}
+{"ts":1371886069236,"patch":[[{"diffs":[[0,"s){\n"],[-1,"    console.log(req.params.method);\n"],[0,"    "]],"start1":32,"start2":32,"length1":44,"length2":8},{"diffs":[[0,"ndex'){\n"],[1,"        console.log(this);\n"],[0,"        "]],"start1":70,"start2":70,"length1":16,"length2":43}]],"length":215,"saved":false}
+{"ts":1371886397572,"patch":[[{"diffs":[[1,"exports.getIndex = function(req, res){\n    res.send('getIndex');\n};\n\n"],[0,"exports.index = "]],"start1":0,"start2":0,"length1":16,"length2":85},{"diffs":[[0,"\n};\n"],[-1,"\nexports.getIndex = function(req, res){\n    res.send('getIndex');\n};"]],"start1":212,"start2":212,"length1":72,"length2":4}]],"length":216,"saved":false}
+{"ts":1371886405153,"patch":[[{"diffs":[[0,"'){\n"],[-1,"        console.log(this);\n"],[0,"    "]],"start1":143,"start2":143,"length1":35,"length2":8}]],"length":189,"saved":false}
+{"ts":1371886430639,"patch":[[{"diffs":[[0,"    "],[-1,"this."],[0,"getI"]],"start1":151,"start2":151,"length1":13,"length2":8}]],"length":184,"saved":false}
+{"ts":1371886505687,"patch":[[{"diffs":[[1,"var getIndex = "],[0,"exports.getIndex"]],"start1":0,"start2":0,"length1":16,"length2":31}]],"length":199,"saved":false}

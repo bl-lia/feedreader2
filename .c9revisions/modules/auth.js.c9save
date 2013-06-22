@@ -1,0 +1,6 @@
+{"ts":1371887474622,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1371887526354,"patch":[[{"diffs":[[1,"var passport = require('passport')\n  , LocalStrategy = require('passport-local');"]],"start1":0,"start2":0,"length1":0,"length2":81}]],"length":81,"saved":false}
+{"ts":1371887549159,"patch":[[{"diffs":[[0,"assport "],[1,"       "],[0,"= requir"]],"start1":5,"start2":5,"length1":16,"length2":23},{"diffs":[[0,"trategy "],[1,"  "],[0,"= requir"]],"start1":52,"start2":52,"length1":16,"length2":18},{"diffs":[[0,"al')"],[-1,";"],[1,".Strategy;\n\n"]],"start1":85,"start2":85,"length1":5,"length2":16}]],"length":101,"saved":false}
+{"ts":1371887604082,"patch":[[{"diffs":[[0,"ategy;\n\n"],[1,"passport.use(new LocalStrategy(\n        function(username, password, done){\n            \n        }\n    ));"]],"start1":93,"start2":93,"length1":8,"length2":114}]],"length":207,"saved":false}
+{"ts":1371887653342,"patch":[[{"diffs":[[0,"        "],[1,"return done(null, 'aaa');"],[0,"\n       "]],"start1":181,"start2":181,"length1":16,"length2":41}]],"length":232,"saved":false}
+{"ts":1371887722026,"patch":[[{"diffs":[[0,"\n    ));"],[1,"\n\nexports = module.exports = passport;"]],"start1":224,"start2":224,"length1":8,"length2":46}]],"length":270,"saved":false}
