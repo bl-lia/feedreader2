@@ -13,9 +13,10 @@ exports.index = function(req, res){
     res.render('login');
 };
 
-exports.postLogin = function(req, res){
-    passport.authenticate('local', {successRedirect: '/',
-                                    failureRedirect: '/login',
-                                    failureFlash: true});
+exports.postLogin = function(req, res, next){
+    console.log('authenticate1');
+    passport.authenticate('local', function(err, user, info){
+        console.log('authenticate');
+    });
 };
 
