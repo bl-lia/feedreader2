@@ -18,6 +18,22 @@ var app = express()
   , server = http.createServer(app)
   , io = socketio.listen(server);
 
+passport.serializeUser(function(user, done) {
+  done(null, user.id);
+});
+
+passport.deserializeUser(function(id, done) {
+    var user = {id:'111', username: 'aaaaa'};
+    done(null, user);
+});
+
+passport.use(new LocalStrategy(
+  function(username, password, done) {
+      var user = {id: '111', username: 'name'};
+      done(null, user);
+  }
+));
+
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
@@ -26,20 +42,16 @@ app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(passport.initialize());
 
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-passport.use(new LocalStrategy(
-        function(username, password, done){
-            return done(null, 'aaa');
-        }
-    ));
 
 app.get('/', routes.index);
 app.get('/users', user.list);
