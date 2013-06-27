@@ -6,17 +6,18 @@
 var express     = require('express')
   , routes      = require('./routes')
   , user        = require('./routes/user')
-  , api         = require('./routes/api')
   , http        = require('http')
   , path        = require('path')
   , socketio    = require('socket.io')
   , passport    = require('passport')
   , LocalStrategy = require('passport-local').Strategy;
 
-//var app = express();
-var app = express()
+var app = module.exports = express()
   , server = http.createServer(app)
   , io = socketio.listen(server);
+
+var events = require('./modules/events')
+  , api         = require('./routes/api');
 
 passport.serializeUser(function(user, done) {
   done(null, user.id);

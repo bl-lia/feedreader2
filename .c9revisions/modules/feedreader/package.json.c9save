@@ -1,0 +1,4 @@
+{"ts":1372321644337,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1372321656522,"patch":[[{"diffs":[[1,"{ \"name\" : \"feedreader\",\r\n  \"main\" : \"./lib/feedreader.js\" }"]],"start1":0,"start2":0,"length1":0,"length2":60}]],"length":60,"saved":false}
+{"ts":1372321893608,"patch":[[{"diffs":[[0," \"./"],[-1,"lib/feedreader"],[1,"main"],[0,".js\""]],"start1":36,"start2":36,"length1":22,"length2":12}]],"length":50,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1372328624066,"patch":[[{"diffs":[[0,"n\" : \"./"],[-1,"main"],[1,"lib/feedreader"],[0,".js\" }"]],"start1":32,"start2":32,"length1":18,"length2":28}]],"length":60,"saved":false}
