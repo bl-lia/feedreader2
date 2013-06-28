@@ -25,10 +25,15 @@ Feed.add = function(feedUrl, callback){
                 if(err) throw err;
                 else{
                     console.log('Success to save feed.');
-                    callback(f);
+                    if(callback !== undefined)
+                        callback(f);
                 }
             });
         });
+};
+
+Feed.fetch = function(){
+    
 };
 
 Feed.test = function(){

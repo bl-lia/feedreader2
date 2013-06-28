@@ -9,4 +9,15 @@ var Feed = new Schema({
         xmlUrl   : String
     });
 
+var Article = new Schema({
+        _id         : Schema.Types.ObjectId,
+        feedId      : Schema.Types.ObjectId,
+        date        : Date,
+        title       : String,
+        description : String,
+        summary     : String,
+        link        : String
+    });
+
 mongoose.model('Feed', Feed);
+mongoose.model('Article', Article);
